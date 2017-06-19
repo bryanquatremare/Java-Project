@@ -1,5 +1,5 @@
 
-public class Motionless {
+public class Motionless implements IMotionless{
 	
 	private Position position;
 	private Dimension dimension;

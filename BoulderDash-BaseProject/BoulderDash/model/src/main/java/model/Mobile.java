@@ -1,5 +1,8 @@
 
-public class Mobile {
+import java.awt.Color;
+
+
+public class Mobile implements IMobile{
 
 	private Direction direction;
 	private Position position;

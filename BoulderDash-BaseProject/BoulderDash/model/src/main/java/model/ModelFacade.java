@@ -11,7 +11,7 @@ import model.dao.ExampleDAO;
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public class ModelFacade implements IModel {
+public class ModelFacade implements IModelFacade {
 
     /**
      * Instantiates a new model facade.
@@ -46,5 +46,45 @@ public class ModelFacade implements IModel {
     public List<Example> getAllExamples() throws SQLException {
         return ExampleDAO.getAllExamples();
     }
+    
+    public IArea getArea(){
 
-}
+    return area;
+    }
+    
+    public void buildArea(Dimension dimension){
+    	
+    }
+    
+    public void addMobile(IMobile mobile){
+    	
+    }
+    
+    public void removeMobile(IMobile mobile){
+    	
+    }
+    
+    public ArrayList<IMobile>(){
+    	
+    }
+    
+    public IMobile getMobileByPlayer(int player){
+    	
+    }
+    
+    public void setMobilesHavesMoved(){
+    	
+    }
+    
+    public void addMotionless(IMotionless motionless){
+    	
+    }
+
+    public void removeMotionless(IMotionless motionless){
+    	
+    }
+    
+    public ArrayList<IMotionless>(){
+    	
+    }
+    
