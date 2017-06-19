@@ -1,3 +1,8 @@
+package model;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public interface IModelFacade {
 
@@ -9,7 +14,7 @@ public interface IModelFacade {
 	
 	public void removeMobile(IMobile mobile);
 
-	public ArrayList<IMobile>();
+	public ArrayList<IMobile> getMobile();
 	
 	public IMobile getMobileByPlayer(int player);
 	
@@ -20,6 +25,12 @@ public interface IModelFacade {
 	public void removeMotionless(IMotionless motionless);
 	
 	public ArrayList<IMotionless> getMotionless();
+
+	List<Example> getAllExamples() throws SQLException;
+
+	Example getExampleByName(String name) throws SQLException;
+
+	Example getExampleById(int id) throws SQLException;
 	
 	
 }

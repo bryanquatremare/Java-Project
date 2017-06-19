@@ -1,6 +1,10 @@
+package model;
+
 
 public class Position {
-
+	private int x;
+	private int y;
+	
 	public Position(double x, double y, double maxX, double MaxY){
 		
 	}

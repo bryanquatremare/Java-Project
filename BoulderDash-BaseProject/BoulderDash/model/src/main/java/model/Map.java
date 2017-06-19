@@ -1,5 +1,8 @@
+package model;
+
 
 import java.awt.Color;
+import java.awt.Image;
 
 public class Map implements IArea{
 	private Dimension dimension;
@@ -15,6 +18,6 @@ public class Map implements IArea{
 	
 	public Image getImage(){
 	
-	return image;
+	return null;
 	}
 }

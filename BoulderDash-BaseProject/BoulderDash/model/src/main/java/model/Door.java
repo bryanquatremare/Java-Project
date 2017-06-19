@@ -1,5 +1,9 @@
+package model;
+
 
 public class Door extends Motionless{
-	super();
-	private int door;
+	public Door(){
+		super(position, dimension, null);
+		int door = 1;
+	}
 }

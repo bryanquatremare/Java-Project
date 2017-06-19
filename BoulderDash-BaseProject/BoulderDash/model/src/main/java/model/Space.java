@@ -1,5 +1,9 @@
+package model;
+
 
 public class Space extends Motionless{
-	super();
-	private int space;
+	public Space(){
+		super(position, dimension, null);
+		int space = 1;
+	}
 }

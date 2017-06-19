@@ -1,5 +1,9 @@
+package model;
+
 
 public class Rock extends Mobile{
-	super();
-	private int rock;
+	public Rock(){
+		super(direction, position, dimension, null);
+		int rock = 1;
+	}
 }

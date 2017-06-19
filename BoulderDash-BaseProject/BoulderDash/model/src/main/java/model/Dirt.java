@@ -1,5 +1,9 @@
+package model;
+
 
 public class Dirt extends Motionless{
-	super();
-	private int dirt;
+	public Dirt(){
+		super(position, dimension, null);
+		int dirt = 1;
+	}
 }

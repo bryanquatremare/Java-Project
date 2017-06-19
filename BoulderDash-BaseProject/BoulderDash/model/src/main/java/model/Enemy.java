@@ -1,5 +1,10 @@
+package model;
+
 
 public class Enemy extends Mobile{
-	super();
-	private int enemy;
+	public Enemy(){
+		super(direction, position, dimension, null);
+		int enemy = 1;
+	}
+	
 }

@@ -1,9 +1,10 @@
  package model;
 
 public class Player extends Mobile{
-	super();
-	private int player;
-		
+	public Player(){
+		super(direction, position, dimension, null);
+		int player = 1;
+	}		
 }
 	
 

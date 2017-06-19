@@ -1,5 +1,12 @@
+package model;
+
 
 public class Diamond extends Mobile{
-	super();
-	private int diamond;
+	
+	public Diamond(){
+		super(direction, position, dimension, null);
+		int diamond = 1;
+	}
+	
+	
 }

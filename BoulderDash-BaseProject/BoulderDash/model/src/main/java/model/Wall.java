@@ -1,5 +1,9 @@
+package model;
+
 
 public class Wall extends Motionless{
-	super();
-	private int wall;
+	public Wall(){
+		super(position, dimension, null);
+		int wall;
+	}
 }

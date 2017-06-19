@@ -1,6 +1,7 @@
 package model;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import model.dao.ExampleDAO;
@@ -49,7 +50,7 @@ public class ModelFacade implements IModelFacade {
     
     public IArea getArea(){
 
-    return area;
+    return null;
     }
     
     public void buildArea(Dimension dimension){
@@ -64,11 +65,13 @@ public class ModelFacade implements IModelFacade {
     	
     }
     
-    public ArrayList<IMobile>(){
+    public ArrayList<IMobile> getMobile(){
+		return null;
     	
     }
     
     public IMobile getMobileByPlayer(int player){
+		return null;
     	
     }
     
@@ -84,7 +87,11 @@ public class ModelFacade implements IModelFacade {
     	
     }
     
-    public ArrayList<IMotionless>(){
-    	
-    }
+
+	@Override
+	public ArrayList<IMotionless> getMotionless() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
     
