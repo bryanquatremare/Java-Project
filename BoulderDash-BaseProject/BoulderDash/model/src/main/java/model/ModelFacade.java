@@ -3,6 +3,7 @@ package model;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
 
 import model.dao.ExampleDAO;
 
@@ -12,7 +13,7 @@ import model.dao.ExampleDAO;
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public class ModelFacade implements IModelFacade {
+public class ModelFacade extends Observable implements IModel {
 
     /**
      * Instantiates a new model facade.
@@ -88,7 +89,6 @@ public class ModelFacade implements IModelFacade {
     }
     
 
-	@Override
 	public ArrayList<IMotionless> getMotionless() {
 		// TODO Auto-generated method stub
 		return null;

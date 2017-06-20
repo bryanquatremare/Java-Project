@@ -42,11 +42,11 @@ public class ControllerFacade implements IController {
      *             the SQL exception
      */
     public void start() throws SQLException {
-        this.getView().displayMessage(this.getModel().getExampleById(1).toString());
+        this.getView().displayMessage(this.getModelFacade().getExampleById(1).toString());
 
-        this.getView().displayMessage(this.getModel().getExampleByName("Example 2").toString());
+        this.getView().displayMessage(this.getModelFacade().getExampleByName("Example 2").toString());
 
-        final List<Example> examples = this.getModel().getAllExamples();
+        final List<Example> examples = this.getModelFacade().getAllExamples();
         final StringBuilder message = new StringBuilder();
         // a.append(" bar);
         for (final Example example : examples) {
@@ -70,7 +70,7 @@ public class ControllerFacade implements IController {
      *
      * @return the model
      */
-    public IModel getModel() {
+    public IModel getModelFacade() {
         return this.model;
     }
 }
