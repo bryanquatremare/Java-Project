@@ -2,7 +2,8 @@ package view;
 
 import javax.swing.JFrame;
 
-public class Fenetre extends JFrame{
+public class Fenetre extends JFrame
+{
 	
 	private Panneau pane = new Panneau();
 	
