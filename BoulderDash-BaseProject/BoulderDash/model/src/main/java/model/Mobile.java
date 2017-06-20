@@ -81,12 +81,12 @@ public class Mobile implements IMobile{
 		
 	}
 	
-	public IModelFacade getModelFacade(){
+	public IModel getModelFacade(){
 		return null;
 		
 	}
 	@Override
-	public void setModelFacade(IModelFacade modelFacade){
+	public void setModelFacade(IModel modelFacade){
 		
 	}
 	@Override
@@ -95,23 +95,23 @@ public class Mobile implements IMobile{
 		
 	}
 	@Override
-	public boolean isPlayer(int player){
-		return false;
+	public boolean isPlayer(boolean player){
+		return player;
 		
 	}
 	@Override
-	public boolean isRock(int rock){
-		return false;
+	public boolean isRock(boolean rock){
+		return rock;
 		
 	}
 	@Override
-	public boolean isEnemy(int enemy){
-		return false;
+	public boolean isEnemy(boolean enemy){
+		return enemy;
 		
 	}
 	@Override
-	public boolean isDiamond(int diamond){
-		return false;
+	public boolean isDiamond(boolean diamond){
+		return diamond;
 		
 	}
 

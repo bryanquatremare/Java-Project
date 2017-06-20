@@ -16,15 +16,18 @@ public interface IMotionless {
 	public Image getImage();
 	
 	public void placeInArea(IArea area);
-	public boolean isWall(int wall);
 	
-	public boolean isDirt(int dirt);
+	public boolean isWall(boolean wall);
 	
-	public boolean isSpace(int space);
+	public boolean isDirt(boolean dirt);
 	
-	public boolean isDoor(int door);
+	public boolean isSpace(boolean space);
 	
-	public void setModelFacade(IModelFacade modelFacade);
+	public boolean isDoor(boolean door);
+	
+	public void setModelFacade(IModel modelFacade);
+	
+	public IModel getModelFacade();
 	
 	public boolean hit();
 	

@@ -40,12 +40,12 @@ public class Motionless implements IMotionless{
 		return dimension;
 	}
 	
-	public IModelFacade getModelFacade(){
+	public IModel getModelFacade(){
 		return null;
 		
 	}
 	
-	public void setModelFacade(IModelFacade modelFacade){
+	public void setModelFacade(IModel modelFacade){
 		
 	}
 	
@@ -54,23 +54,23 @@ public class Motionless implements IMotionless{
 		
 	}
 	
-	public boolean isWall(int Wall){
-		return false;
+	public boolean isWall(boolean wall){
+		return wall;
 		
 	}
 	
-	public boolean isDirt(int Dirt){
-		return false;
+	public boolean isDirt(boolean dirt){
+		return dirt;
 		
 	}
 	
-	public boolean isSpace(int Space){
-		return false;
+	public boolean isSpace(boolean space){
+		return space;
 		
 	}
 	
-	public boolean isDoor(int Door){
-		return false;
+	public boolean isDoor(boolean door){
+		return door;
 		
 	}
 

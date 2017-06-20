@@ -26,16 +26,18 @@ public interface IMobile {
 	
 	public void placeInArea(IArea area);
 	
-	public boolean isPlayer(int player);
+	public boolean isPlayer(boolean player);
 
-	public void setModelFacade(IModelFacade modelFacade);
+	public void setModelFacade(IModel modelFacade);
+	
+	public IModel getModelFacade();
 
 	public boolean hit();
 	
-	public boolean isRock(int rock);
+	public boolean isRock(boolean rock);
 	
-	public boolean isDiamond(int diamond);
+	public boolean isDiamond(boolean diamond);
 	
-	public boolean isEnemy(int enemy);
+	public boolean isEnemy(boolean enemy);
 
 }
