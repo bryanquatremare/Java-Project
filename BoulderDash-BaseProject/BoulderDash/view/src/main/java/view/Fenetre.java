@@ -14,4 +14,9 @@ public class Fenetre extends JFrame
 	this.setVisible(true);
 	this.setContentPane(pane);
 	}
+	
+	public Panneau getPane()
+	{
+		return this.pane;
+	}
 }
