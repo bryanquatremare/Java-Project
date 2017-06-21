@@ -5,18 +5,18 @@ import javax.swing.JFrame;
 public class Fenetre extends JFrame
 {
 	
-	private Panneau pane = new Panneau();
+	private static Panneau pane = new Panneau();
 	
 	public Fenetre()
 	{
 	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	this.setSize(1600, 1200);
+	this.setSize(976, 999);
 	this.setVisible(true);
 	this.setContentPane(pane);
 	}
 	
-	public Panneau getPane()
+	public static Panneau getPane()
 	{
-		return this.pane;
+		return pane;
 	}
 }
