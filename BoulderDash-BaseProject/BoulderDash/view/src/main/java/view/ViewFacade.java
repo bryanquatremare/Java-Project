@@ -1,6 +1,10 @@
 package view;
 
+import java.io.IOException;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+
+
 
 /**
  * <h1>The Class ViewFacade provides a facade of the View component.</h1>
@@ -8,21 +12,27 @@ import javax.swing.JOptionPane;
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public class ViewFacade implements IView {
+public class ViewFacade implements IView 
+{
 
-    /**
-     * Instantiates a new view facade.
-     */
-    public ViewFacade() {
-        super();
+	
+	public static void main(String[] args) throws IOException 
+	{
+		JFrame frame = new JFrame();  
+		Fenetre win = new Fenetre();
+	}
+	
+	
+    
+    public ViewFacade()
+    {
+    	
     }
 
-    /*
-     * (non-Javadoc)
-     * @see view.IView#displayMessage(java.lang.String)
-     */
+
     @Override
-    public final void displayMessage(final String message) {
+    public final void displayMessage(final String message) 
+    {
         JOptionPane.showMessageDialog(null, message);
     }
 
