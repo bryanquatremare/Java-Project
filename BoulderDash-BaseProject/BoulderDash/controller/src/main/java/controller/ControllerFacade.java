@@ -3,62 +3,46 @@ package controller;
 import java.sql.SQLException;
 import java.util.List;
 
-import model.Example;
 import model.IModel;
 import view.IView;
 
 /**
  * <h1>The Class ControllerFacade provides a facade of the Controller component.</h1>
  *
- * @author Jean-Aymeric DIET jadiet@cesi.fr
- * @version 1.0
+ * @author Marand Virgile, Lhermine Ludovic, Quatremare Bryan and Blin Clément.
+ * @version HeartGold-SoulSilver
  */
 public class ControllerFacade implements IController {
 
-    /** The view. */
-    private final IView  view;
+    /** The view is initialized here to be used in the instantiation of the controller facade
+     * 
+     */
+    private final IView view;
 
-    /** The model. */
+    /** The model is also initialized here for the same reasons
+     * 
+     */
     private final IModel model;
-
+    
     /**
-     * Instantiates a new controller facade.
-     *
+     * Instantiates a new controller facade to initialize the dependencies with the Model package and View package
+     * The throws SQLException is there for Make sure none of those SQLExceptions are going to kill our execution.
      * @param view
      *            the view
      * @param model
      *            the model
+     * @throws SQLException 
      */
-    public ControllerFacade(final IView view, final IModel model) {
-        super();
-        this.view = view;
+    public ControllerFacade( final IModel model, final IView view) throws SQLException {
+    	this.view = view;
         this.model = model;
+        
     }
 
-    /**
-     * Start.
-     *
-     * @throws SQLException
-     *             the SQL exception
-     */
-    public void start() throws SQLException {
-        this.getView().displayMessage(this.getModel().getExampleById(1).toString());
-
-        this.getView().displayMessage(this.getModel().getExampleByName("Example 2").toString());
-
-        final List<Example> examples = this.getModel().getAllExamples();
-        final StringBuilder message = new StringBuilder();
-        // a.append(" bar);
-        for (final Example example : examples) {
-            message.append(example);
-            message.append('\n');
-        }
-        this.getView().displayMessage(message.toString());
-    }
 
     /**
      * Gets the view.
-     *
+     * A simple method which can be called by an other class to get the view used by the controller facade
      * @return the view
      */
     public IView getView() {
@@ -67,10 +51,17 @@ public class ControllerFacade implements IController {
 
     /**
      * Gets the model.
-     *
+     * A simple method with the same functionalities as the getView method but for the model.
      * @return the model
      */
     public IModel getModel() {
         return this.model;
     }
+
+
+	@Override
+	public void userOrder(char dir) {
+		
+		
+	}
 }

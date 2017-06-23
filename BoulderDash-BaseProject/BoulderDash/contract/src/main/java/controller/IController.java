@@ -3,9 +3,12 @@ package controller;
 /**
  * <h1>The Interface IController.</h1>
  * 
- * @author Jean-Aymeric DIET jadiet@cesi.fr
- * @version 1.0
+ * @author Marand Virgile, Lhermine Ludovic, Quatremare Bryan and Blin Clément.
+ * @version HeartGold-SoulSilver
  */
-public interface IController {
+public interface IController 
+{
+
+	void userOrder(char dir);
 
 }

@@ -1,29 +1,41 @@
 package view;
 
-import javax.swing.JOptionPane;
+
+import javax.swing.JFrame;
+
+import controller.IController;
+import model.IModel;
 
 /**
- * <h1>The Class ViewFacade provides a facade of the View component.</h1>
+ * <h1>The Class ViewFacade Implements IView and instantiate a new Frame for the render.</h1>
  *
- * @author Jean-Aymeric DIET jadiet@cesi.fr
- * @version 1.0
+ * @author Marand Virgile, Lhermine Ludovic, Quatremare Bryan and Blin Clément.
+ * @version HeartGold-SoulSilver
  */
-public class ViewFacade implements IView {
 
+public class ViewFacade implements IView
+{
+	static JFrame frame;
+	public static IController controller;
+	public Keyboard keyboard;
+		
     /**
-     * Instantiates a new view facade.
+     * ViewFacade's constructor used to instantiate a new frame and a new window.
+     * @param model
      */
-    public ViewFacade() {
-        super();
+    public ViewFacade(IModel model)
+    {
+    	frame = new JFrame();  
+		new Window(model);
     }
-
-    /*
-     * (non-Javadoc)
-     * @see view.IView#displayMessage(java.lang.String)
+    
+    /**
+     * method userOrder is receiving instructions from the keyboard's class and sending it to the controller.
+     * @param dir
      */
-    @Override
-    public final void displayMessage(final String message) {
-        JOptionPane.showMessageDialog(null, message);
+    public static void userOrder(char dir)
+    {
+    	controller.userOrder(dir);
     }
 
 }
