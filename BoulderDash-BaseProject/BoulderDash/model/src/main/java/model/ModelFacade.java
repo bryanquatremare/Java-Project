@@ -9,7 +9,7 @@ import java.sql.Statement;
 /**
  * <h1>The Class ModelFacade provides a facade of the Model component.</h1>
  *
- * @author Marand Virgile, Lhermine Ludovic, Quatremare Bryan and Blin Clï¿½ment.
+ * @author Marand Virgile, Lhermine Ludovic, Quatremare Bryan and Blin Clément.
  * @version HeartGold-SoulSilver
  */
 public class ModelFacade implements IModel 
@@ -34,7 +34,7 @@ public class ModelFacade implements IModel
 	    Statement state = null;
 	    try
 	    {	// on se connecte
-	    	con = DriverManager.getConnection("jdbc:mysql://10.176.131.110/Java_Project", "Ludo", "lhermine");
+	    	con = DriverManager.getConnection("jdbc:mysql://192.168.1.6/Java_Project", "Ludo", "lhermine");
 			state = con.createStatement();
 			String query = "CALL getMap();";
 			ResultSet resultat = state.executeQuery(query);
@@ -83,6 +83,5 @@ public class ModelFacade implements IModel
         
         buildTab();
     }
-
 
 }

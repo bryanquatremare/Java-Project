@@ -3,7 +3,7 @@ package model;
 /**
  * <h1>The Class Player provides a few methods for the Player's movements.</h1>
  *
- * @author Marand Virgile, Lhermine Ludovic, Quatremare Bryan and Blin Clï¿½ment.
+ * @author Marand Virgile, Lhermine Ludovic, Quatremare Bryan and Blin Clément.
  * @version HeartGold-SoulSilver
  */
 
