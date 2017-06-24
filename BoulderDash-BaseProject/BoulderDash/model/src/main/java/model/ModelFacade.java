@@ -9,7 +9,7 @@ import java.sql.Statement;
 /**
  * <h1>The Class ModelFacade provides a facade of the Model component.</h1>
  *
- * @author Marand Virgile, Lhermine Ludovic, Quatremare Bryan and Blin Clément.
+ * @author Marand Virgile, Lhermine Ludovic, Quatremare Bryan and Blin Clï¿½ment.
  * @version HeartGold-SoulSilver
  */
 public class ModelFacade implements IModel 
@@ -83,5 +83,6 @@ public class ModelFacade implements IModel
         
         buildTab();
     }
+
 
 }
